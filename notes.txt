@@ -1,0 +1,151 @@
+pre-Decimal:
+p is  0.49209290140665435
+q is  0.5079070985933456
+0.04557122378105275
+
+
+p is  0.492092901406654348317459835016052238643169403076171875
+q is  0.5079070985933456516825401650
+0.04557122378105275729473011211
+
+
+range:
+.010 - .064
+
+.037 +/- .027
+
+
+spot checks:
+Aspergillus_fumigatus           0.021151105994227103        ~29MB
+C. Elegens (post 2007)          0.04455555676948032         ~100MB
+G. gallus (post 2007)           0.021505949779023918        ~1.1GB
+MERS (not mentioned in study)   0.04658523462528473         ~30kB
+A. thaliana (post 2007)         0.01916633387283991         ~119MB    
+
+
+e-coli study:
+https://www.ncbi.nlm.nih.gov/bioproject/294072
+
+https://www.ncbi.nlm.nih.gov/sra?term=SRA010028
+
+https://www.ncbi.nlm.nih.gov/sra/?term=REL8605
+
+https://www.ncbi.nlm.nih.gov/biosample?LinkName=bioproject_biosample_all&from_uid=380528
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+umbrella project home page:
+https://www.ncbi.nlm.nih.gov/bioproject/294072
+
+Run browser:
+https://www.ncbi.nlm.nih.gov/Traces/study/?query_key=14&WebEnv=MCID_691a1a8599c3d775c6eb053d&f=datastore_filetype_ss%3An%3Afastq%3Borganism_s%3An%3Aescherichia%2520coli%2520b%2520str.%2520rel606&o=acc_s%3Aa
+
+POCs:
+
+REL606:
+[364254, 1234002, 1571459, 1100166, 359928]
+p is  0.4923059510839749
+q is  0.5076940489160251                          
+0.04581686293994376
+
+output (20k) (ENA):
+[364243, 1234009, 1571455, 1100165, 359923]
+p is  0.4923061438101619
+q is  0.5076938561898381
+0.04581633266876391
+
+output (50k):
+[363384, 1231307, 1568085, 1098015, 359320]
+p is  0.4923475914230688
+q is  0.5076524085769312
+0.04584889849659198
+
+
+
+experiment steps:
+-identify and download REL606 - GenBank file here: https://www.ncbi.nlm.nih.gov/nuccore/NC_012967.1/
+-run order_index.py on REL606
+-download fastq files for SRR files
+-run breseq:
+--./breseq -r base_genome.gbk -j 8 compressed_fastq.gz -o output_directory_name
+-run gdtools:
+--./gdtools APPLY -r base_genome.gbk path/to/relevant/output.gd
+-run order_index.py on output of gdtools
+
+
+
+
+
+commands for each file:
+
+-SRR098027-33k.fastq.gz
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098027-33k.fastq.gz -o final_candidates_output/SRR098027-33k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098027-33k/output/output.gd -o final_candidates_output/SRR098027-33k/gdtools_output_SRR098027-33k.fasta
+
+-SRR098029-40k.fastq.gz
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098029-40k.fastq.gz -o final_candidates_output/SRR098029-40k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098029-40k/output/output.gd -o final_candidates_output/SRR098029-40k/gdtools_output_SRR098029-40k.fasta
+
+-SRR098030-40k.fastq.gz
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098030-40k.fastq.gz -o final_candidates_output/SRR098030-40k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098030-40k/output/output.gd -o final_candidates_output/SRR098030-40k/gdtools_output_SRR098030-40k.fasta
+
+-SRR098032-32k.fastq.gz
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098032-32k.fastq.gz -o final_candidates_output/SRR098032-32k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098032-32k/output/output.gd -o final_candidates_output/SRR098032-32k/gdtools_output_SRR098032-32k.fasta
+
+-SRR098034-34k.fastq.gz
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098034-34k.fastq.gz -o final_candidates_output/SRR098034-34k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098034-34k/output/output.gd -o final_candidates_output/SRR098034-34k/gdtools_output_SRR098034-34k.fasta
+
+-SRR098035-34k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098035-34k.fastq.gz -o final_candidates_output/SRR098035-34k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098035-34k/output/output.gd -o final_candidates_output/SRR098035-34k/gdtools_output_SRR098035-34k.fasta
+
+-SRR098036-36k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098036-36k.fastq.gz -o final_candidates_output/SRR098036-36k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098036-36k/output/output.gd -o final_candidates_output/SRR098036-36k/gdtools_output_SRR098036-36k.fasta
+
+-SRR098037-36k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098037-36k.fastq.gz -o final_candidates_output/SRR098037-36k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098037-36k/output/output.gd -o final_candidates_output/SRR098037-36k/gdtools_output_SRR098037-36k.fasta
+
+-SRR098038-38k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098038-38k.fastq.gz -o final_candidates_output/SRR098038-38k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098038-38k/output/output.gd -o final_candidates_output/SRR098038-38k/gdtools_output_SRR098038-38k.fasta
+
+-SRR098039-38k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098039-38k.fastq.gz -o final_candidates_output/SRR098039-38k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098039-38k/output/output.gd -o final_candidates_output/SRR098039-38k/gdtools_output_SRR098039-38k.fasta
+
+-SRR098042-32k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098042-32k.fastq.gz -o final_candidates_output/SRR098042-32k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098042-32k/output/output.gd -o final_candidates_output/SRR098042-32k/gdtools_output_SRR098042-32k.fasta
+
+-SRR098043-32k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098043-32k.fastq.gz -o final_candidates_output/SRR098043-32k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098043-32k/output/output.gd -o final_candidates_output/SRR098043-32k/gdtools_output_SRR098043-32k.fasta
+
+-SRR098285-20k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098285-20k.fastq.gz -o final_candidates_output/SRR098285-20k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098285-20k/output/output.gd -o final_candidates_output/SRR098285-20k/gdtools_output_SRR098285-20k.fasta
+
+-SRR098286-20k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098286-20k.fastq.gz -o final_candidates_output/SRR098286-20k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098286-20k/output/output.gd -o final_candidates_output/SRR098286-20k/gdtools_output_SRR098286-20k.fasta
+
+SRR098289-31-5k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098289-31-5k.fastq.gz -o final_candidates_output/SRR098289-31-5k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098289-31-5k/output/output.gd -o final_candidates_output/SRR098289-31-5k/gdtools_output_SRR098289-31-5k.fasta
+
+SRR12340679-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR12340679-50k.fastq.gz -o final_candidates_output/SRR12340679-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR12340679-50k/output/output.gd -o final_candidates_output/SRR12340679-50k/gdtools_output_SRR12340679-50k.fasta
+
+SRR12340680-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR12340680-50k.fastq.gz -o final_candidates_output/SRR12340680-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR12340680-50k/output/output.gd -o final_candidates_output/SRR12340680-50k/gdtools_output_SRR12340680-50k.fasta
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9821931/
