@@ -6,7 +6,7 @@ from datetime import datetime
 print(datetime.now())
 
 # current_sequence_file_path = "test_sequences/toy_sequence.txt"
-current_sequence_file_path = "final_candidates_output/SRR12340680-50k/gdtools_output_SRR12340680-50k.txt"
+current_sequence_file_path = "final_candidates_output/ara+4/SRR12340707-50k/gdtools_output_SRR12340707-50k.txt"
 
 with open(current_sequence_file_path, 'r', encoding='utf-8') as file:
     file_contents = file.read()

@@ -80,72 +80,112 @@ experiment steps:
 
 commands for each file:
 
+ARA-3
+
 -SRR098027-33k.fastq.gz
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098027-33k.fastq.gz -o final_candidates_output/SRR098027-33k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098027-33k/output/output.gd -o final_candidates_output/SRR098027-33k/gdtools_output_SRR098027-33k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098027-33k.fastq.gz -o final_candidates_output/ara-3/SRR098027-33k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098027-33k/output/output.gd -o final_candidates_output/ara-3/SRR098027-33k/gdtools_output_SRR098027-33k.fasta
 
 -SRR098029-40k.fastq.gz
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098029-40k.fastq.gz -o final_candidates_output/SRR098029-40k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098029-40k/output/output.gd -o final_candidates_output/SRR098029-40k/gdtools_output_SRR098029-40k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098029-40k.fastq.gz -o final_candidates_output/ara-3/SRR098029-40k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098029-40k/output/output.gd -o final_candidates_output/ara-3/SRR098029-40k/gdtools_output_SRR098029-40k.fasta
 
 -SRR098030-40k.fastq.gz
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098030-40k.fastq.gz -o final_candidates_output/SRR098030-40k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098030-40k/output/output.gd -o final_candidates_output/SRR098030-40k/gdtools_output_SRR098030-40k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098030-40k.fastq.gz -o final_candidates_output/ara-3/SRR098030-40k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098030-40k/output/output.gd -o final_candidates_output/ara-3/SRR098030-40k/gdtools_output_SRR098030-40k.fasta
 
 -SRR098032-32k.fastq.gz
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098032-32k.fastq.gz -o final_candidates_output/SRR098032-32k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098032-32k/output/output.gd -o final_candidates_output/SRR098032-32k/gdtools_output_SRR098032-32k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098032-32k.fastq.gz -o final_candidates_output/ara-3/SRR098032-32k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098032-32k/output/output.gd -o final_candidates_output/ara-3/SRR098032-32k/gdtools_output_SRR098032-32k.fasta
 
 -SRR098034-34k.fastq.gz
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098034-34k.fastq.gz -o final_candidates_output/SRR098034-34k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098034-34k/output/output.gd -o final_candidates_output/SRR098034-34k/gdtools_output_SRR098034-34k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098034-34k.fastq.gz -o final_candidates_output/ara-3/SRR098034-34k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098034-34k/output/output.gd -o final_candidates_output/ara-3/SRR098034-34k/gdtools_output_SRR098034-34k.fasta
 
 -SRR098035-34k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098035-34k.fastq.gz -o final_candidates_output/SRR098035-34k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098035-34k/output/output.gd -o final_candidates_output/SRR098035-34k/gdtools_output_SRR098035-34k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098035-34k.fastq.gz -o final_candidates_output/ara-3/SRR098035-34k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098035-34k/output/output.gd -o final_candidates_output/ara-3/SRR098035-34k/gdtools_output_SRR098035-34k.fasta
 
 -SRR098036-36k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098036-36k.fastq.gz -o final_candidates_output/SRR098036-36k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098036-36k/output/output.gd -o final_candidates_output/SRR098036-36k/gdtools_output_SRR098036-36k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098036-36k.fastq.gz -o final_candidates_output/ara-3/SRR098036-36k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098036-36k/output/output.gd -o final_candidates_output/ara-3/SRR098036-36k/gdtools_output_SRR098036-36k.fasta
 
 -SRR098037-36k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098037-36k.fastq.gz -o final_candidates_output/SRR098037-36k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098037-36k/output/output.gd -o final_candidates_output/SRR098037-36k/gdtools_output_SRR098037-36k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098037-36k.fastq.gz -o final_candidates_output/ara-3/SRR098037-36k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098037-36k/output/output.gd -o final_candidates_output/ara-3/SRR098037-36k/gdtools_output_SRR098037-36k.fasta
 
 -SRR098038-38k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098038-38k.fastq.gz -o final_candidates_output/SRR098038-38k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098038-38k/output/output.gd -o final_candidates_output/SRR098038-38k/gdtools_output_SRR098038-38k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098038-38k.fastq.gz -o final_candidates_output/ara-3/SRR098038-38k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098038-38k/output/output.gd -o final_candidates_output/ara-3/SRR098038-38k/gdtools_output_SRR098038-38k.fasta
 
 -SRR098039-38k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098039-38k.fastq.gz -o final_candidates_output/SRR098039-38k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098039-38k/output/output.gd -o final_candidates_output/SRR098039-38k/gdtools_output_SRR098039-38k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098039-38k.fastq.gz -o final_candidates_output/ara-3/SRR098039-38k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098039-38k/output/output.gd -o final_candidates_output/ara-3/SRR098039-38k/gdtools_output_SRR098039-38k.fasta
 
 -SRR098042-32k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098042-32k.fastq.gz -o final_candidates_output/SRR098042-32k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098042-32k/output/output.gd -o final_candidates_output/SRR098042-32k/gdtools_output_SRR098042-32k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098042-32k.fastq.gz -o final_candidates_output/ara-3/SRR098042-32k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098042-32k/output/output.gd -o final_candidates_output/ara-3/SRR098042-32k/gdtools_output_SRR098042-32k.fasta
 
 -SRR098043-32k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098043-32k.fastq.gz -o final_candidates_output/SRR098043-32k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098043-32k/output/output.gd -o final_candidates_output/SRR098043-32k/gdtools_output_SRR098043-32k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098043-32k.fastq.gz -o final_candidates_output/ara-3/SRR098043-32k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098043-32k/output/output.gd -o final_candidates_output/ara-3/SRR098043-32k/gdtools_output_SRR098043-32k.fasta
 
 -SRR098285-20k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098285-20k.fastq.gz -o final_candidates_output/SRR098285-20k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098285-20k/output/output.gd -o final_candidates_output/SRR098285-20k/gdtools_output_SRR098285-20k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098285-20k.fastq.gz -o final_candidates_output/ara-3/SRR098285-20k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098285-20k/output/output.gd -o final_candidates_output/ara-3/SRR098285-20k/gdtools_output_SRR098285-20k.fasta
 
 -SRR098286-20k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098286-20k.fastq.gz -o final_candidates_output/SRR098286-20k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098286-20k/output/output.gd -o final_candidates_output/SRR098286-20k/gdtools_output_SRR098286-20k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098286-20k.fastq.gz -o final_candidates_output/ara-3/SRR098286-20k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098286-20k/output/output.gd -o final_candidates_output/ara-3/SRR098286-20k/gdtools_output_SRR098286-20k.fasta
 
 SRR098289-31-5k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR098289-31-5k.fastq.gz -o final_candidates_output/SRR098289-31-5k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR098289-31-5k/output/output.gd -o final_candidates_output/SRR098289-31-5k/gdtools_output_SRR098289-31-5k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR098289-31-5k.fastq.gz -o final_candidates_output/ara-3/SRR098289-31-5k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR098289-31-5k/output/output.gd -o final_candidates_output/ara-3/SRR098289-31-5k/gdtools_output_SRR098289-31-5k.fasta
 
 SRR12340679-50k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR12340679-50k.fastq.gz -o final_candidates_output/SRR12340679-50k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR12340679-50k/output/output.gd -o final_candidates_output/SRR12340679-50k/gdtools_output_SRR12340679-50k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR12340679-50k.fastq.gz -o final_candidates_output/ara-3/SRR12340679-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR12340679-50k/output/output.gd -o final_candidates_output/ara-3/SRR12340679-50k/gdtools_output_SRR12340679-50k.fasta
 
 SRR12340680-50k
-./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/SRR12340680-50k.fastq.gz -o final_candidates_output/SRR12340680-50k
-./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/SRR12340680-50k/output/output.gd -o final_candidates_output/SRR12340680-50k/gdtools_output_SRR12340680-50k.fasta
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-3/SRR12340680-50k.fastq.gz -o final_candidates_output/ara-3/SRR12340680-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-3/SRR12340680-50k/output/output.gd -o final_candidates_output/ara-3/SRR12340680-50k/gdtools_output_SRR12340680-50k.fasta
 
 https://pmc.ncbi.nlm.nih.gov/articles/PMC9821931/
+
+
+ARA-6
+
+-SRR12340686-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-6/SRR12340686-50k.fastq.gz -o final_candidates_output/ara-6/SRR12340686-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-6/SRR12340686-50k/output/output.gd -o final_candidates_output/ara-6/SRR12340686-50k/gdtools_output_SRR12340686-50k.fasta
+
+-SRR12340691-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-6/SRR12340691-50k.fastq.gz -o final_candidates_output/ara-6/SRR12340691-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-6/SRR12340691-50k/output/output.gd -o final_candidates_output/ara-6/SRR12340691-50k/gdtools_output_SRR12340691-50k.fasta
+
+-SRR12340695-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-6/SRR12340695-50k.fastq.gz -o final_candidates_output/ara-6/SRR12340695-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-6/SRR12340695-50k/output/output.gd -o final_candidates_output/ara-6/SRR12340695-50k/gdtools_output_SRR12340695-50k.fasta
+
+-SRR12340704-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara-6/SRR12340704-50k.fastq.gz -o final_candidates_output/ara-6/SRR12340704-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara-6/SRR12340704-50k/output/output.gd -o final_candidates_output/ara-6/SRR12340704-50k/gdtools_output_SRR12340704-50k.fasta
+
+
+ARA+4
+
+-SRR12340689-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara+4/SRR12340689-50k.fastq.gz -o final_candidates_output/ara+4/SRR12340689-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara+4/SRR12340689-50k/output/output.gd -o final_candidates_output/ara+4/SRR12340689-50k/gdtools_output_SRR12340689-50k.fasta
+
+-SRR12340694-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara+4/SRR12340694-50k.fastq.gz -o final_candidates_output/ara+4/SRR12340694-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara+4/SRR12340694-50k/output/output.gd -o final_candidates_output/ara+4/SRR12340694-50k/gdtools_output_SRR12340694-50k.fasta
+
+-SRR12340698-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara+4/SRR12340698-50k.fastq.gz -o final_candidates_output/ara+4/SRR12340698-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara+4/SRR12340698-50k/output/output.gd -o final_candidates_output/ara+4/SRR12340698-50k/gdtools_output_SRR12340698-50k.fasta
+
+SRR12340707-50k
+./breseq/bin/breseq -r final_candidates/REL606.gbk -j 8 final_candidates/fastqs/ara+4/SRR12340707-50k.fastq.gz -o final_candidates_output/ara+4/SRR12340707-50k
+./breseq/bin/gdtools APPLY -r final_candidates/REL606.gbk final_candidates_output/ara+4/SRR12340707-50k/output/output.gd -o final_candidates_output/ara+4/SRR12340707-50k/gdtools_output_SRR12340707-50k.fasta
